@@ -3,12 +3,12 @@ library(stringr)
 
 #build a corpus and specify the source to be character of vectors
 #a corpus is a collection of written texts
-myCorpus <- iconv(tweets.df$text, "ASCII", "UTF-8", sub="")
+myCorpus <- tm_map(myCorpus, content_transformer(tolower))
 myCorpus <- tm_map(myCorpus, function(x) iconv(enc2utf8(x), sub = "byte"))
 myCorpus <- Corpus(VectorSource(tweets.df$text))
 
 #convert myCorpus into lowercase
-myCorpus <- tm_map(myCorpus, content_transformer(tolower))
+
 
 #remove punctuation
 myCorpus <- tm_map(myCorpus, removePunctuation)
