@@ -15,10 +15,10 @@ library(base64enc)
 # empty string values that are defined as placeholders.
 # See https://dev.twitter.com/docs/auth/oauth for more information 
 # on Twitter's OAuth implementation.
-Access_token <-  "92508756-jfMBTMdZbC3lOAga4NHu7c7DpE4oDwM2HnHfUs3MA"
-Access_token_secret <-  "0U02wiesBamBvLQI7DZlNFOlqiaedp0jt9Lk9d8oYEuNA"
-consumer_key <-  "esFEPTaTjCE4NzCwN6UD2ZmUq"
-consumer_secret <-  "xyTSL0I7nbJN7slYuahh7TlFqpEPpsLZwcrFUfa0wprqCUpgEf"
+Access_token <-  ""
+Access_token_secret <-  ""
+consumer_key <-  ""
+consumer_secret <-  ""
 
 setup_twitter_oauth(consumer_key,consumer_secret,Access_token,Access_token_secret)
 
